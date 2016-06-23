@@ -1,0 +1,76 @@
+head 
+
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  
+  title HyperWeather
+  
+  link(id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon")
+  
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.7/chartist.min.css")
+  link(rel="stylesheet" href="/style.css")
+  
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js")
+  
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.7/chartist.min.js")
+  
+  script(src="skycons.js")
+  script(src="chartist-plugin-pointlabels.js")
+  script(src="renderjson.js")
+  script(src="client.js")
+  
+  
+body
+ .view.portrait
+    div#currently.flex-top.flex-vertical
+      #links-container.flex-top.flex-container
+        #links
+          a(href="http://forecast.io/#/f/#{latitude},#{longitude}") Full forecast.io
+          | &nbsp;|&nbsp;
+          a.json-link(href="/weather?latitude=#{latitude},longitude=#{longitude}")
+            span JSON Data
+          |&nbsp;|&nbsp;
+          a(href="/about")
+            span Help/About
+      .forecast.flex-bottom.flex-vertical
+        div.flex-item.flex-container.center
+          h1.location= location
+        div.icon-and-temperature.flex-item.flex-container.center
+          canvas.icon(width=64 height=64)
+          div.temperature
+        div.flex-item.flex-container.center
+          span.summary
+          span . Feels like&nbsp;
+          span.apparentTemperature
+        div.flex-item.flex-container.center
+          hr
+    
+    #chart.flex-bottom
+      div#daily.flex-container.space-between
+        div.template
+          canvas(width=40 height=40)
+          div.label
+      div.chartist.ct-chart.ct-golden-section
+      
+  .view.landscape
+    #wide-chart
+      div#summary
+      div#daily.flex-container.space-between
+        div.template
+          canvas(width=40 height=40)
+          div.label
+      div.chartist.ct-major-twelfth  
+      
+      
+  .view.weather-data.hidden
+    div.close
+      b &#10060;
+    .data
+    
+  .info.hidden
+    .latitude= latitude
+    .longitude= longitude
+
+

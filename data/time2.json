@@ -1,0 +1,54 @@
+{
+    "latitude": 37.57,
+    "longitude": 126.98,
+    "timezone": "Asia/Seoul",
+    "offset": 9,
+    "currently": {
+        "time": 1465755886,
+        "summary": "Clear",
+        "icon": "clear-night",
+        "precipIntensity": 0,
+        "precipProbability": 0,
+        "temperature": 59.71,
+        "apparentTemperature": 59.71,
+        "dewPoint": 58.7,
+        "humidity": 0.96,
+        "windSpeed": 0.85,
+        "windBearing": 319,
+        "cloudCover": 0.19,
+        "pressure": 1003.85,
+        "ozone": 323.38
+    },
+    "daily": {
+        "data": [
+            {
+                "time": 1465743600,
+                "summary": "Partly cloudy until afternoon.",
+                "icon": "partly-cloudy-day",
+                "sunriseTime": 1465762294,
+                "sunsetTime": 1465815326,
+                "moonPhase": 0.27,
+                "precipIntensity": 0.001,
+                "precipIntensityMax": 0.0018,
+                "precipIntensityMaxTime": 1465779600,
+                "precipProbability": 0.04,
+                "precipType": "rain",
+                "temperatureMin": 59.54,
+                "temperatureMinTime": 1465754400,
+                "temperatureMax": 79.27,
+                "temperatureMaxTime": 1465797600,
+                "apparentTemperatureMin": 59.54,
+                "apparentTemperatureMinTime": 1465754400,
+                "apparentTemperatureMax": 79.27,
+                "apparentTemperatureMaxTime": 1465797600,
+                "dewPoint": 60.98,
+                "humidity": 0.77,
+                "windSpeed": 2.22,
+                "windBearing": 303,
+                "cloudCover": 0.28,
+                "pressure": 1003.14,
+                "ozone": 326.1
+            }
+        ]
+    }
+}

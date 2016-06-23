@@ -1,0 +1,31 @@
+{
+	"name": "HyperWeather",
+	"version": "1.0.0",
+	"description": "User-friendly, actionable weather forecasts",
+	"main": "index.js",
+	"scripts": {
+		"start": "./node_modules/.bin/coffee server.coffee"
+	},
+	"dependencies": {
+    "express": "^4.13.4",
+    "coffee-script": "^1.10.0",
+    "coffee-middleware": "^0.3.0",
+    "body-parser" :"1.15.1",
+    "request-promise": "^3.0.0",
+    "jade": "^1.11.0",
+    "jstransformer-marked": "^1.0.1",
+    "moment": "2.13.0",
+    "request-ip": "^1.2.2",
+    "consolidate": "^0.14.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://hyperdev.com/#!/project/summer-myth"
+	},
+	"keywords": [
+		"node",
+		"hyperdev",
+		"express"
+	],
+	"license": "MIT"
+}
